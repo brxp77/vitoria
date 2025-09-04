@@ -61,7 +61,7 @@ yesBtn.addEventListener("click", () => {
   // Redireciona após 3 segundos
   setTimeout(() => {
     window.location.href = "https://www.youtube.com/watch?v=7v-7crnsPwM&list=RD7v-7crnsPwM&start_radio=1"; // link do YouTube para o "Sim"
-  }, 2000);
+  }, 1000);
 });
 
 
@@ -75,7 +75,7 @@ noBtn.addEventListener("click", () => {
   // Redireciona após 3 segundos
   setTimeout(() => {
     window.location.href = "https://www.youtube.com/watch?v=hC-0RxO_NUg&list=RDhC-0RxO_NUg&start_radio=1"; // link do YouTube para o "Não"
-  }, 2000);
+  }, 1000);
 });
 
 
@@ -95,5 +95,6 @@ function createHeart() {
 }
 
 setInterval(createHeart, 1000);
+
 
 
