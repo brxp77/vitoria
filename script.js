@@ -56,17 +56,27 @@ yesBtn.addEventListener("click", () => {
 
   document.getElementById("photo1").style.display = "none"; // esconde a inicial
 
-
   sendDiscordLog("SIM");
+
+  // Redireciona após 3 segundos
+  setTimeout(() => {
+    window.location.href = "https://www.youtube.com/watch?v=7v-7crnsPwM&list=RD7v-7crnsPwM&start_radio=1"; // link do YouTube para o "Sim"
+  }, 2000);
 });
+
 
 // Botão "Não"
 noBtn.addEventListener("click", () => {
   typedTextElement.innerHTML = "ah...";
   document.getElementById("photo2").style.display = "none"; // garante que a do "Sim" não aparece
-  sendDiscordLog("NÃO");
-});
 
+  sendDiscordLog("NÃO");
+
+  // Redireciona após 3 segundos
+  setTimeout(() => {
+    window.location.href = "https://www.youtube.com/watch?v=hC-0RxO_NUg&list=RDhC-0RxO_NUg&start_radio=1"; // link do YouTube para o "Não"
+  }, 2000);
+});
 
 
 // Corações animados
@@ -85,4 +95,5 @@ function createHeart() {
 }
 
 setInterval(createHeart, 1000);
+
 
