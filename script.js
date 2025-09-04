@@ -2,9 +2,9 @@ const typedTextElement = document.getElementById("typed-text");
 
 const paragraphs = [
   "Desde quando eu te conheci, que foi exatamente há 4 meses e 21 dias, pra ser mais exato 144 dias, eu percebi que você era minha segunda parte, algo que eu sempre pedi a Deus.",
-  "quando conversarmos, percebi que você seria o amor da minha vida, a minha futura namorada, noiva e esposa. até hoje imagino você subindo no altar e eu te esperando, você de branco e eu fazendo meus votos...",
+  "Quando conversarmos, percebi que você seria o amor da minha vida, a minha futura namorada, noiva e esposa. Até hoje imagino você no altar, eu te esperando, você de branco e nós fazendo os votos...",
   "Meu maior desejo é que esses 144 dias se tornem anos e anos, queria poder fazer você mudar de ideia e escolher ficar comigo pra sempre, ser minha última mulher.",
-  "Talvez em um futuro próximo você topa ser minha mulher? Minha única e última mulher. Topa?"
+  "Talvez em um futuro próximo você aceitaria ser minha esposa? Minha única e última mulher. Aceita?"
 ];
 
 let paragraphIndex = 0;
@@ -85,3 +85,4 @@ function createHeart() {
 }
 
 setInterval(createHeart, 1000);
+
