@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Fundo com vídeo */
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(60%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  padding: 20px;
+  color: #fff;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 80vh; /* limita a altura da tela */
+  overflow-y: auto; /* adiciona scroll vertical se passar do limite */
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.photo {
+  margin: 15px 0;
+}
+.photo img {
+  max-width: 210px;           /* Tamanho das imagens */
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s;
+}
+
+.photo img:hover {
+  transform: scale(1.05);
+}
+
+#typed-text {
+  font-size: 1.2rem;
+  min-height: 100px;
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  background: #fff;
+  color: #e91e63;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background: #e91e63;
+  color: #fff;
+}
+
+iframe {
+  margin-top: 20px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  height: 80px;
+}
+
+/* Corações animados */
+.heart {
+  position: fixed;
+  color: #ff4d6d;
+  font-size: 20px;
+  animation: float 5s linear infinite;
+  bottom: -10%;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120vh) scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  h1 { font-size: 1.5rem; }
+  #typed-text { font-size: 1rem; }
+  .photo img { max-width: 110px; }
+  button { font-size: 0.9rem; padding: 10px 18px; }
+}
+
+#typed-text {
+  font-size: 1rem;
+  min-height: 100px;
+  margin: 20px 0;
+  line-height: 1.1; /* diminui o espaçamento entre linhas */
+}
